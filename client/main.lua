@@ -16,9 +16,9 @@ AddEventHandler('sendMessageAdmin', function(id, name, message)
 	ESX.TriggerServerCallback('dbgd-teamchat:getGroup', function(Group)
 		UserGroup = Group
 		if pid == myId then
-			-- Your Notify
+			-- Your Notify | example TriggerEvent("notification", "color", "title", "ID: " .. id .. " | " .. name .. " | " .. message)
 		elseif UserGroup ~= 'user' and pid ~= myId then
-			-- Your Notify
+			-- Your Notify | example TriggerEvent("notification", "color", "title", "ID: " .. id .. " | " .. name .. " | " .. message)
 		end
   end)
 end)
